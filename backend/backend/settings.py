@@ -75,6 +75,7 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
+     "https://geo-attend-ydpk.onrender.com",
     "http://localhost:5173",
 ]
 
