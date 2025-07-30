@@ -10,7 +10,7 @@ export default function AttendanceListPage() {
 
   // Fetch attendance data
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/attendance-list/${sessionId}`)
+    fetch(`${import.meta.env.VITE_API_URL}/attendance-list/${sessionId}`)
       .then((res) => res.json())
       .then(setData);
   }, [sessionId]);
